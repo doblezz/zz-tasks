@@ -1,4 +1,6 @@
-#!/bin/sh
-npm run lint 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-chmod +x .husky/pre-commit
+npm version --commit-hooks false --git-tag-version false patch
+git add package.json package-lock.json
+
