@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <div className="ContainerApp">
+      <div className={`ContainerApp`}>
         <Routes />
       </div>
     </Router>

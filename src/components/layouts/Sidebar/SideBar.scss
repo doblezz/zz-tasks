@@ -1,0 +1,36 @@
+/* Estilos base para el menú lateral */
+@import "../../../style/variable";
+
+.sidebar {
+  width: 220px;
+  height: calc(100% - 50px);
+  position: fixed;
+  top: 50px;
+  left: -290px;
+  background: $bg-color-primary;
+  transition: left 0.3s;
+  z-index: 9999999;
+}
+
+/* Estilos para el menú abierto */
+.sidebar.open {
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+/* Estilos para el botón de abrir/cerrar */
+.toggle-button {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1001;
+}
