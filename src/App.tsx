@@ -1,11 +1,17 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './router'; // Importa el componente de enrutamiento
+import Routes from './router';
+
+// import Layouts
+import Navbar from './components/layouts/nav-bar/NavBar';
+
+// import styles generals
+import './style/styles.scss'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        {/* Puedes agregar elementos globales aquí, como encabezados y pies de página */}
+      <Navbar/>
+      <div className="ContainerApp">
         <Routes />
       </div>
     </Router>

@@ -1,1 +1,47 @@
 @import "./variable";
+
+* {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  list-style: none;
+  text-decoration: none;
+  font-family: $Rubik;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body,
+html {
+  background-color: $bg-color-secundary;
+}
+
+.ContainerApp{
+  flex: 1;
+  overflow: auto;
+  height: calc(100vh - 50px);
+  padding: 20px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $Montserrat;
+}
+
+p,
+a,
+span,
+li,
+ol {
+  font-family: $Rubik;
+}
