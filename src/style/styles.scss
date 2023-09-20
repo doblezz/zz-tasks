@@ -29,6 +29,10 @@ html {
   padding: 20px !important;
 }
 
+.ContainerApp ~ .sidebar.open  {
+  width: calc(100% - 220px);
+}
+
 h1,
 h2,
 h3,
